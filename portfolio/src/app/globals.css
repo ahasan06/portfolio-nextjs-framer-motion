@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000; /* Set default background to black */
+  --foreground: #ffffff; /* Set default text color to white */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; /* Slightly lighter black for dark mode */
+    --foreground: #ededed; /* Lighter text for dark mode */
+  }
+}
+
+body {
+  color: var(--foreground); /* Apply the foreground color */
+  background: var(--background); /* Apply the background color */
+  font-family: Arial, Helvetica, sans-serif;
+}
